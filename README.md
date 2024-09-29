@@ -12,4 +12,4 @@ en el listado estan algunas de las tecnologias usadas:
 
 - [VSCode] - (Visual Studio Code): Es un editor de código fuente desarrollado por Microsoft, que es popular por su velocidad, extensibilidad y soporte para múltiples lenguajes de programación.
 
--[Bootstrap] - Es un framework de CSS que facilita la creación de sitios web responsivos y con buen diseño, ya que proporciona una colección de componentes predefinidos como botones, formularios, menús de navegación, entre otros.
+- [Bootstrap] - Es un framework de CSS que facilita la creación de sitios web responsivos y con buen diseño, ya que proporciona una colección de componentes predefinidos como botones, formularios, menús de navegación, entre otros.
