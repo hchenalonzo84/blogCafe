@@ -66,7 +66,7 @@ img {
 
 
 /**GRID**/
-
+/* para pantallas medianas en adelante */
 @media (min-width:768px) {
     .grid {
         display: flex;
@@ -122,11 +122,13 @@ img {
     }
     /**HEADER**/
     @media (min-width:768px) {
-        .barra {
+        .barra *{
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+      
+
     }
     .site-header {
         background-image: url(../img/banner.jpg);
@@ -176,11 +178,13 @@ img {
     }
     .texto-header p {
         font-size: 2.2rem;
+        margin-top: 8rem;
     }
     /**CONTENIDO PRINCIPAL HOME **/
     .contenido-principal {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row-reverse;
     }
     .blog,
     .cursos {
@@ -241,8 +245,12 @@ img {
     padding: 3rem;
     margin-top: 4rem;
 }
+.site-footer a {
+    color: white;
+    text-decoration: none;
+}
 
-.site-footer P {
+.site-footer h1 {
     color: #ffffff;
     font-size: 4rem;
     font-weight: 400;
@@ -250,7 +258,7 @@ img {
     text-align: center;
 }
 
-.site-footer p span {
+.site-footer h1 span {
     font-weight: 700;
 }
 
