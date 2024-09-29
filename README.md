@@ -8,7 +8,7 @@ en el listado estan algunas de las tecnologias usadas:
 
 - [HTML] - (HyperText Markup Language): Es el lenguaje estándar utilizado para estructurar y definir el contenido de las páginas web.
 
--[CSS] - (Cascading Style Sheets): Es el lenguaje utilizado para describir la apariencia visual (diseño, colores, fuentes, etc.) de un documento HTML.
+- [CSS] - (Cascading Style Sheets): Es el lenguaje utilizado para describir la apariencia visual (diseño, colores, fuentes, etc.) de un documento HTML.
 
 - [VSCode] - (Visual Studio Code): Es un editor de código fuente desarrollado por Microsoft, que es popular por su velocidad, extensibilidad y soporte para múltiples lenguajes de programación.
 
