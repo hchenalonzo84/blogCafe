@@ -174,9 +174,16 @@ img {
     }
 
     /** Entrada Blog y Cursos Sidebar **/
-    .entrada-blog, .entrada-curso {
+    .entrada-blog{
         margin-bottom: 1.5rem;
         border-bottom: none;
+    }
+    .entrada-curso {
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #e1e1e1;
+    }
+    .entrada-curso:last-of-type {
+        border: none;
     }
 
     .cursos {
