@@ -22,7 +22,7 @@ body {
 .contenedor {
     max-width: 1200px;
     width: 95%;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 h1,
@@ -63,7 +63,9 @@ img {
 .no-margin {
     margin: 0;
 }
-
+.nosotros h1{
+    text-align: center;
+}
 
 /**GRID**/
 /* Para pantallas pequeñas (menores a 768px) */
@@ -203,6 +205,16 @@ img {
     .curso p span,
     .curso p.descripcion {
         font-weight: 400;
+    }
+    /**Estilos para la seccion de nosotros**/
+    .entrada-nosotros{
+        display: block;        
+    }
+    .imagen{
+        width: 100%;
+    }
+    .contenido-nosotros{
+        width: 100;
     }
 }
 /* para pantallas medianas en adelante */
@@ -374,6 +386,19 @@ img {
     .curso p.descripcion {
         font-weight: 400;
     }
+    /**Estilos para la seccion de nosotros**/
+    .entrada-nosotros{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .imagen{
+        width: 50%;
+    }
+    .contenido-nosotros{
+        width: 46%;
+    }
+    
 }
 
 
