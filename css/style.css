@@ -23,6 +23,7 @@ body {
     max-width: 1200px;
     width: 95%;
     margin: 0 auto;    
+    /* border: 1px solid red; */
 }
 
 h1,
@@ -52,7 +53,9 @@ h4 {
 img {
     max-width: 100%;
 }
-
+.entrada-curso{
+    padding: 1.5rem;
+}
 
 /**UTILIDADES**/
 
@@ -63,8 +66,11 @@ img {
 .no-margin {
     margin: 0;
 }
-.nosotros h1{
+.nosotros h1, .cursos h1{
     text-align: center;
+}
+.negritas{
+    font-weight: bolder;
 }
 
 /**GRID**/
@@ -148,6 +154,9 @@ img {
         margin-top: 3rem;
         font-size: 1.8rem;
     }
+    .texto-header .dispo-mobil{
+        text-align: center;
+    }
 
     .texto-header p {
         font-size: 1.4rem;
@@ -165,7 +174,7 @@ img {
     }
 
     /** Entrada Blog y Cursos Sidebar **/
-    .entrada-blog {
+    .entrada-blog, .entrada-curso {
         margin-bottom: 1.5rem;
         border-bottom: none;
     }
@@ -215,6 +224,20 @@ img {
     }
     .contenido-nosotros{
         width: 100;
+    }
+     /**estilos para los talleres o cursos**/
+     .entrada-curso{
+        display: block;
+        
+    }    
+    .imagen-cursos{
+        width: 100%;
+    }
+    .contenido-curso{
+        width: 100%;
+    }
+    .entrada-curso h3{
+        font-size: larger;
     }
 }
 /* para pantallas medianas en adelante */
@@ -357,11 +380,11 @@ img {
         }
     }
     /**OPCIONAL**/
-    .entrada-blog {
+    .entrada-blog,.entrada-curso {
         margin-bottom: 2rem;
         border-bottom: 1px solid #e1e1e1;
     }
-    .entrada-blog:last-of-type {
+    .entrada-blog:last-of-type,.entrada-curso:last-of-type {
         border: none;
     }
     /**CURSOS SIDEBAR**/
@@ -398,7 +421,20 @@ img {
     .contenido-nosotros{
         width: 46%;
     }
-    
+    /**estilos para los talleres o cursos**/
+    .entrada-curso{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        
+    }
+    .imagen-cursos{
+        width: 40%;
+    }
+    .contenido-curso{
+        width: 58%;
+    }
+
 }
 
 
