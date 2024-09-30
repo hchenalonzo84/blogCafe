@@ -66,6 +66,145 @@ img {
 
 
 /**GRID**/
+/* Para pantallas pequeñas (menores a 768px) */
+@media (max-width: 768px) {
+    .grid {
+        display: flex;
+        flex-direction: column; /* Cambiamos la dirección del grid a vertical */
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .centrar-columnas {
+        justify-content: center;
+    }
+
+    /* Clases de columnas ajustadas para pantallas pequeñas */
+    .columnas-4,
+    .columnas-6,
+    .columnas-8,
+    .columnas-10,
+    .columnas-12 {
+        flex: 0 0 100%; /* Todas las columnas ocupan el 100% del ancho */
+        margin-bottom: 2rem;
+    }
+
+    /**BOTONES**/
+    .btn {
+        display: block;
+        text-align: center;
+        padding: 0.8rem 0rem;
+        margin: 1rem 0;
+        color: #ffffff;
+        font-size: 1.6rem;
+        width: 100%; /* Los botones ocupan todo el ancho */
+        flex: 0 0 100%;
+        text-transform: uppercase;
+        text-decoration: none;
+         font-family: 'PT Sans', sans-serif;
+        font-weight: 700;
+    }
+
+    .btn-primario {
+        background-color: black;
+    }
+
+    .btn-secundario {
+        background-color: #784d3c;
+    }
+
+    /**HEADER**/
+    .site-header {
+        background-image: url(../img/banner.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 40rem; /* Reducir la altura del header */
+    }
+    .site-header a {
+        color: white;
+        text-decoration: none;
+    }
+    .barra {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-header h1 {
+        font-size: 3rem;
+    }
+
+    .navegacion a {
+        font-size: 1.6rem;
+        display: block;
+        margin: 1rem 0;
+    }
+
+    /** Header Texto **/
+    .texto-header {
+        color: white;
+        margin-top: 3rem;
+        font-size: 1.8rem;
+    }
+
+    .texto-header p {
+        font-size: 1.4rem;
+    }
+
+    /** CONTENIDO PRINCIPAL HOME **/
+    .contenido-principal {
+        display: block;
+    }
+
+    .blog,
+    .cursos {
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+    }
+
+    /** Entrada Blog y Cursos Sidebar **/
+    .entrada-blog {
+        margin-bottom: 1.5rem;
+        border-bottom: none;
+    }
+
+    .cursos {
+        order: 0;
+    }
+
+    .curso {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .curso p {
+        font-size: 1.6rem;
+    }
+
+    /** NAVEGACIÓN **/
+    .navegacion {
+        text-align: center;
+    }
+
+    .navegacion a {
+        display: block;
+        margin: 1rem 0;
+        color: #ffffff;
+        text-decoration: none;
+
+    }
+
+    /** CURSOS SIDEBAR **/
+    .cursos-lista {
+        padding: 0;
+        list-style: none;
+    }
+
+    .curso p span,
+    .curso p.descripcion {
+        font-weight: 400;
+    }
+}
 /* para pantallas medianas en adelante */
 @media (min-width:768px) {
     .grid {
@@ -300,4 +439,16 @@ img {
 .formulario-contacto .enviar {
     display: flex;
     justify-content: flex-end;
+}
+
+/* tamaño de contendor responsivo */
+ @media (min-width: 1290px) {
+    .contenedor {
+        width: 70%;
+      }
+}
+@media (min-width: 1440px) {
+    .contenedor {
+        width: 95%;
+      }
 }
