@@ -246,6 +246,95 @@ img {
     .entrada-curso h3{
         font-size: larger;
     }
+    /*estilos para contacto*/
+    /** CONTACTO **/
+
+.imagen-form-fondo {
+    background-image: url('../img/contacto.jpg'); /* Reemplaza con la ruta correcta */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Ajusta según el diseño */
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.formulario-contacto {    
+    background-color: #ffffff;
+    padding: 5rem;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;    
+    max-width: 800px;
+    margin: -100px auto 0; /* Para que suba sobre la imagen */
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar el formulario */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/** MEDIA QUERY PARA PANTALLAS PEQUEÑAS **/
+
+@media (max-width: 768px) {
+    .imagen-form-fondo {
+        height: 160px; /* Ajustamos la altura en pantallas más pequeñas */
+    }
+    
+    .formulario-contacto {    
+        padding: 2rem; /* Reducimos el padding para pantallas más pequeñas */
+        width: 95%; /* Hacemos el formulario más ancho para ocupar más espacio */
+        margin-top: -80px; /* Ajustamos el margen para la superposición */
+        max-width: 80%; /* Permitimos que el formulario ocupe todo el ancho */
+    }
+    
+    .formulario-contacto .campo {
+        flex-direction: column; /* Hacemos que los campos se dispongan en columna */
+        align-items: flex-start; /* Alineamos los elementos al inicio */
+    }
+
+    .formulario-contacto .campo label {
+        flex: 0 0 auto;
+        margin-bottom: 0.5rem; /* Añadimos margen inferior para las etiquetas */
+    }
+
+    .formulario-contacto .campo input:not([type="submit"]),
+    .formulario-contacto textarea {
+        flex: 1 1 100%;
+        width: 90%; /* Aseguramos que ocupen todo el ancho */
+    }
+
+    .formulario-contacto textarea {
+        height: 150px; /* Reducimos la altura del textarea */
+    }
+}
+
+/* Campo del formulario */
+.formulario-contacto .campo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.formulario-contacto .campo label {
+    flex: 0 0 8rem;
+}
+
+.formulario-contacto .campo input:not([type="submit"]),
+.formulario-contacto textarea {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+
+.formulario-contacto textarea {
+    height: 20rem;
+}
+
+/* Botón de enviar */
+.formulario-contacto .enviar {
+    display: flex;
+    justify-content: flex-end;
+}
+
 }
 /* para pantallas medianas en adelante */
 @media (min-width:768px) {
@@ -441,6 +530,11 @@ img {
     .contenido-curso{
         width: 58%;
     }
+    /*Estilos para formulario contacto*/
+   
+    .contacto h1{
+        text-align: center;
+    }
 
 }
 
@@ -471,15 +565,32 @@ img {
 
 
 /**CONTACTO**/
-
-.formulario-contacto {
-    background-color: #ffffff;
-    padding: 5rem;
-}
-
+ 
 @media (min-width: 768px) {
     .formulario-contacto {
         margin-top: -10rem;
+    }
+    .imagen-form-fondo{
+        background-image: url('../img/contacto.jpg'); /* Reemplaza con la ruta correcta */
+        background-size: cover;
+        background-position: center;
+        height: 400px; /* Ajusta según el diseño */
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+    
+    .formulario-contacto {    
+        background-color: #ffffff;
+        padding: 5rem;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;    
+        max-width: 800px;
+        margin: -100px auto 0; /* Para que suba sobre la imagen */
+        z-index: 2;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar el formulario */
+        border-radius: 10px; /* Bordes redondeados */
     }
 }
 
